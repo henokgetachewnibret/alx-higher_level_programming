@@ -37,7 +37,7 @@ int is_palindrome(listint_t **head)
 	reverse(&middle);
 	i = compare_lists(*head, middle, len);
 
-	return (1);
+	return (i);
 }
 
 /**
@@ -80,6 +80,7 @@ void reverse(listint_t **head)
 	current = *head;
 	while (current != NULL)
 	{
+
 		next = current->next;
 		current->next = prev;
 		prev = current;
