@@ -16,15 +16,12 @@ int is_palindrome(listint_t **head)
 	int len, i;
 	listint_t *tmp;
 	listint_t *middle;
-
 	if (head == NULL || *head == NULL)
 		return(1);
 	tmp = *head;
 	middle = *head;
- 
 	for (len = 0; tmp != NULL; len++)
 		tmp = tmp->next;
-
 	len = len / 2;
 
 	for (i = 1; i < len; i++)
@@ -50,7 +47,6 @@ int is_palindrome(listint_t **head)
 int compare_lists(listint_t *head, listint_t *middle, int len)
 {
 	int i;
-
 	if (head == NULL || middle == NULL)
 		return (1);
 	for (i = 0; i < len; i++)
@@ -62,7 +58,6 @@ int compare_lists(listint_t *head, listint_t *middle, int len)
 	}
 	return (1);
 }
-
 /**
  * reverse -reverse a list
  * @head: pointer to the head to reverse
@@ -72,15 +67,12 @@ void reverse(listint_t **head)
 	listint_t *current;
 	listint_t *next;
 	listint_t *prev;
-
 	if (head == NULL || *head == NULL)
 		return;
-
 	prev = NULL;
 	current = *head;
 	while (current != NULL)
 	{
-
 		next = current->next;
 		current->next = prev;
 		prev = current;
