@@ -1,5 +1,14 @@
 #!/usr/bin/python3
+"""
+Modile 2-matrix_divided
+contain one method that divided the element of
+The same size of int or float matrix
+Return the devidened number rouneded to two decimal place
+"""
+
 def matrix_divided(matrix, div):
+    """Return new matrix with devidedned"""
+
     errorMessage = "matrix must be a matrix (list of lists) of integers/floats"
     if not matrix:
         raise TypeError(errorMessage)
