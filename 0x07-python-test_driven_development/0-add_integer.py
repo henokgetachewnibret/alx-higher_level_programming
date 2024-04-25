@@ -1,11 +1,8 @@
 #!/usr/bin/python3
-"""
-Module 0-add_integer
-contain one methon and accept two values of int or float type
-and cast them to int before adding
-Return an int sum
-"""
 def add_integer(a, b=98):
+    """
+    Return the summation of two argument
+    """
     if not isinstance(a, int) and not isinstance(a, float):
         raise TypeError("a must be an integer")
     if not isinstance(b, int) and not isinstance(b, float):
