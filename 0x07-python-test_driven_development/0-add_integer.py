@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+'''
+Return an int sum
+'''
 def add_integer(a, b=98):
     '''
     Return the summation of two argument
