@@ -10,6 +10,8 @@ def matrix_divided(matrix, div):
     """Return new matrix with devidedned"""
 
     errorMessage = "matrix must be a matrix (list of lists) of integers/floats"
+    message_one = "Each row of the matrix must have the same size"
+
     if not matrix:
         raise TypeError(errorMessage)
     if not isinstance(matrix, list):
